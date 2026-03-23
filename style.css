@@ -1,9 +1,55 @@
 body{
-    display: grid;
-    grid-template-areas: ;
-    grid-template-rows: 200px 600px 150px;
-    grid-template-columns: 200px auto auto;
+    display: grid
+    grid-template-areas:
+    "cabeca cabeca cabeca"
+    "braco corpo corpo"
+    "perna perna perna";
+    grid-template-rows: 200px 750px 250px;
+    grid-template-columns: 200px 150px;
 }
 header{
-    gri
+    background-color: blue;
+    grid-area: cabeca;
+}
+main{
+    background-color: blueviolet;
+    grid-area: corpo;
+    height: 750px;
+}
+aside{
+    background-color: aquamarine;
+    grid-area: braco;
+}
+footer{
+    background-color: brown;
+    grid-area: perna;
+    height: auto;
+}
+@media only screen and (max-width: 850px){
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca cabeca"
+    "braco braco"
+    "corpo corpo"
+    "perna perna";
+    grid-template-rows: 200px 50px auto 250px;
+    grid-template-columns: 80px auto;
+}
+}
+@media only screen and (max-width: 550px){
+body{
+    "corpo corpo"
+    "perna perna"
+    grid-template-rows: 220px 50px auto 250px;
+    grid-template-columns: 80px auto;
+}
+}
+@media only screen and (max-width: 550px){
+body{
+    display: grid;
+    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 550px;
+
+}
 }
