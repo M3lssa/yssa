@@ -1,14 +1,92 @@
 header{
-    background-color: orange;
+    background-color: green;
     margin: 0%;
+}
+main{
+    background-color: orange;
+    grid-area: corpo;
+    height: 750px;
 }
 .logo{
     width: 165px;
 }
 
+.titulo-principal {
+    text-align: center;
+}
 
+.rainbow {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+}
 
+/* Cores das letras do título */
+#ll { color: orange; }
+#aa { color: yellow; }
+#rr { color: yellowgreen; }
+#nn { color: goldenrod; }
+#jj { color: yellowgreen; }
+#ii { color: yellow;}
+#hh { color: yellowgreen; }
 
+.subtitulo {
+    font-size: 1.1rem;
+    color: #bdeca7;
+    letter-spacing: 1px;
+}
+
+.mae{
+    background-color: rgb(255, 0, 0);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    border: pink 2px solid;
+    background-color: yellow;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+img{
+    width: 590px;
+}
+.detalhes{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 160px;
+}
+.paleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botao{
+    border: 2px green solid;
+    width: 110px;
+    color: black;
+    font-size: 20px;
+}
+/*muda a cor do butão e do texto*/
+.botao:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(9, 255, 0);
+}
+footer{
+    height: 300px;
+    background-color: blueviolet;
+}
 
 
 
@@ -24,17 +102,11 @@ header{
 
 body{
     display: grid
-    grid-template-areas:
     "cabeca cabeca cabeca"
     "braco corpo corpo"
     "perna perna perna";
     grid-template-rows: 200px 750px 250px;
     grid-template-columns: 200px 150px;
-}
-main{
-    background-color: blueviolet;
-    grid-area: corpo;
-    height: 750px;
 }
 aside{
     background-color: aquamarine;
@@ -59,8 +131,6 @@ body{
 }
 @media only screen and (max-width: 550px){
 body{
-    "corpo corpo"
-    "perna parna"
     grid-template-rows: 220px 50px auto 250px;
     grid-template-columns: 80px auto;
 }
@@ -82,15 +152,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.card{
-    border: pink 2px solid;
-    background-color: yellow;
-    width: 400px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin: 20px;
 }
 .img_card{
     width: 300px;
