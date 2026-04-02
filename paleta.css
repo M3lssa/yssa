@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 165px;
+    background-color: green;
+}
+.logo{
+    width: 165px;
+    height: auto;
+}
+main{
+    background-color: orange;
+}
+img{
+    width: 600px;
+}
+.detalhes{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.paleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botao{
+    border: 2px purple solid;
+    border-radius: 10px;
+    width: 200px;
+    color: black;
+    font-size: large;
+}
+.botao:hover{
+    color: blue;
+    background-color: blueviolet;
+}
