@@ -1,12 +1,9 @@
 header{
     background-color: green;
-    margin: 0%;
+    margin: 0;
+    height: 162px;
 }
-main{
-    background-color: orange;
-    grid-area: corpo;
-    height: 750px;
-}
+
 .logo{
     width: 165px;
 }
@@ -34,8 +31,14 @@ main{
 
 .subtitulo {
     font-size: 1.1rem;
-    color: #bdeca7;
+    color: yellowgreen;
     letter-spacing: 1px;
+}
+
+main{
+    background-color: orange;
+    grid-area: corpo;
+    height: 750px;
 }
 
 .mae{
@@ -47,18 +50,25 @@ main{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .card{
-    border: pink 2px solid;
+    border: yellowgreen;
     background-color: yellow;
     width: 400px;
     padding: 20px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 30px;
     margin: 20px;
 }
-img{
-    width: 590px;
+.card:hover{
+    box-shadow: inset 2px 2px 2px 1px rgba(m0, 0, 0, 0.2);
 }
+.card img{
+    max-height: 220px;
+    width: auto;
+    border-radius: 25px;
+}
+
 .detalhes{
     background-color: blueviolet;
     display: flex;
@@ -67,101 +77,27 @@ img{
     align-items: center;
     margin: 160px;
 }
+
 .paleta{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .botao{
     border: 2px green solid;
+    border-radius: 200px;
     width: 110px;
     color: black;
-    font-size: 20px;
+    font-size: large;
 }
 /*muda a cor do butão e do texto*/
 .botao:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(9, 255, 0);
 }
+
 footer{
     height: 300px;
     background-color: blueviolet;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-body{
-    display: grid
-    "cabeca cabeca cabeca"
-    "braco corpo corpo"
-    "perna perna perna";
-    grid-template-rows: 200px 750px 250px;
-    grid-template-columns: 200px 150px;
-}
-aside{
-    background-color: aquamarine;
-    grid-area: braco;
-}
-footer{
-    background-color: brown;
-    grid-area: perna;
-    height: auto;
-}
-@media only screen and (max-width: 850px){
-body{
-    display: grid;
-    grid-template-areas: 
-    "cabeca cabeca"
-    "braco braco"
-    "corpo corpo"
-    "perna perna";
-    grid-template-rows: 200px 50px auto 250px;
-    grid-template-columns: 80px auto;
-}
-}
-@media only screen and (max-width: 550px){
-body{
-    grid-template-rows: 220px 50px auto 250px;
-    grid-template-columns: 80px auto;
-}
-}
-@media only screen and (max-width: 550px){
-body{
-    display: grid;
-    grid-template-areas: 
-    "cabeca"
-    "corpo"
-    "perna";
-    grid-template-rows: 150px auto 150px;
-    grid-template-columns: 550px;
-
-}
-}
-.art{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.img_card{
-    width: 300px;
-    height: auto;
-}
-.texto_card{
-    color: aliceblue;
-    font-size: x-large;
-}
-.jogadores{
-    width: 300px;
-    height: auto;
 }
