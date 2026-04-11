@@ -2,41 +2,168 @@
     margin: 0;
     padding: 0;
 }
+
 header{
-    height: 165px;
     background-color: green;
+    margin: 0;
+    height: 165px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+
 .logo{
     width: 165px;
+}
+
+.titulo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-principal p{
+    margin: 0;
+}
+
+.rainbow {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+}
+
+/* Cores das letras do título */
+#ll { color: orange; }
+#aa { color: yellow; }
+#rr { color: yellowgreen; }
+#nn { color: goldenrod; }
+#jj { color: yellowgreen; }
+#ii { color: yellow;}
+#hh { color: yellowgreen; }
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: yellowgreen;
+    letter-spacing: 1px;
+}
+
+.logo{
+    width: 140px;
     height: auto;
+    border-radius: 10px;
 }
 main{
     background-color: orange;
+    height: 390px;
 }
-img{
+.imagem{
     width: 600px;
+    border-radius: 30px;
+    margin: 30px;
 }
 .detalhes{
-    background-color: aqua;
+    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     margin: 100px;
 }
-.paleta{
+.produto{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.produto h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: orange;
+}
+
+.produto p {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #d5ff63;
+}
 .botao{
-    border: 2px purple solid;
+    border: 2px orange solid;
     border-radius: 10px;
     width: 200px;
-    color: black;
+    color: orange;
     font-size: large;
+    display: block;
+    margin: 0 auto;
 }
 .botao:hover{
-    color: blue;
-    background-color: blueviolet;
+    color: green;
+    background-color: orange;
+}
+
+footer {
+    background-color: green;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: orange;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #d5ff63;
+}
+.icone-carrinho{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.carrinho{
+    display: none;
+    background-color: rgb(255, 202, 103);
+    border: 2px solid green;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carrinho ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.carrinho li{
+    background-color: #ffe5b4;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.carrinho h2{
+    margin: 0;
+    font-size: 22px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.carrinho p{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgreen;
 }

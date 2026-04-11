@@ -16,7 +16,13 @@
                 </p>
                 <p class="subtitulo">MAKEUP</p>
     </div>
+    <img src="imagens/laranj-removebg-preview.png" class="icone-carrinho" onclick="abrirCarrinho()">
     </header>
+    <div id="carrinho" class="carrinho">
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+    </div>
     <main>
     
     <section class="mae">
@@ -29,6 +35,9 @@
                     <p>Clique aqui</p>
                 </div>
             </a>
+            <button onclick="adicionarCarrinho('Paleta de Sombras', 125.90)">
+            Adicionar ao carrinho
+            </button>
         </div>
         <div class="card">
             <h3>Rimel</h3>
@@ -38,6 +47,9 @@
                     <p>Clique aqui</p>
                 </div>
             </a>
+            <button onclick="adicionarCarrinho('Rimel', 29.90)">
+            Adicionar ao carrinho
+            </button>
         </div>
         <div class="card">
             <h3>Gloss</h3>
@@ -76,3 +88,14 @@
             </a>
         </div>
     </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Loja de Laranjas</h3>
+            <p>Desenvolvido por: Rayssa (2º A)</p>
+            <p>2026</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
